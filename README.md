@@ -1,3 +1,13 @@
+## Starship
+Install Starship to get a custom terminal theme
+### Installation
+```
+sudo pacman -S starship
+```
+### Setup
+Use the file `starship.toml` and use as config file to get the correct color scheme (catppuccin!😃).
+
+
 ## Gnome extensions
 Use the profile to download and save the custom GNOME enviroment.
 ### install gnome extensions
