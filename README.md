@@ -1,5 +1,5 @@
 ## Starship
-Install Starship to get a custom terminal theme
+Install Starship to get a custom terminal theme.
 ### Installation
 ```
 sudo pacman -S starship
@@ -25,4 +25,4 @@ Use the created file to launch our settings:
 ```
 dconf load /org/gnome/shell/extensions/ << gnomeExt.conf
 ```
-And now we launch our settings in gnome extensions
+And now we launch our settings in gnome extensions.
