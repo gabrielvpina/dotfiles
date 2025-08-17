@@ -11,6 +11,7 @@
         "clock"
     ],
     "modules-right": [
+        "cpu",
         "tray",
         "memory",
         "network",
@@ -22,7 +23,7 @@
         "format": "{icon}",
         "on-click": "activate",
         "on-click-right": "fullscreen",
-        "icon-theme": "WhiteSur",
+        "icon-theme": "Adwaita",
         "icon-size": 25,
         "tooltip-format": "{title}"
     },
@@ -48,12 +49,18 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": []
+            "5": [],
+            "6": []
         }
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "interval": 2,
+        "tooltip": true
     },
     "memory": {
         "interval": 5,
-        "format": "󰍛 {}%",
+        "format": "MEM: {}%",
         "max-length": 10
     },
     "tray": {
@@ -94,7 +101,7 @@
     "custom/logo": {
         "format": "  ",
         "tooltip": false,
-        "on-click": "~/.config/wofi/launcher.sh &"
+        "on-click": "/home/gabriel/.config/rofi/launchers/type-6/launcher.sh &"
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -135,6 +142,6 @@
     "custom/power": {
         "format": "󰤆",
         "tooltip": false,
-        "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
+        "on-click": "~/.config/rofi/powermenu/type-6/powermenu.sh &"
     }
 }
