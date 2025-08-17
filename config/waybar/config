@@ -11,7 +11,9 @@
         "clock"
     ],
     "modules-right": [
+        "temperature",
         "cpu",
+        "disk",
         "tray",
         "memory",
         "network",
@@ -37,10 +39,6 @@
             "3": "3",
             "4": "4",
             "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
             "active": "󱓻",
             "urgent": "󱓻"
         },
@@ -49,18 +47,36 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": [],
-            "6": []
+            "5": []
         }
     },
     "cpu": {
-        "format": "CPU: {usage}%",
+        "format": ":{usage}%",
         "interval": 2,
         "tooltip": true
     },
+
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": " CPU  {temperatureC}°C",
+        "format": "CPU  {temperatureC}°C"
+    },
+
+    "disk": {
+    "path": "/",
+    "interval": 30,
+    "format": "󰋊:{percentage_free}%",
+    "tooltip": true,
+    "states": {
+        "warning": 10,
+        "critical": 5
+    }
+    },  
     "memory": {
         "interval": 5,
-        "format": "MEM: {}%",
+        "format": ":{}%",
         "max-length": 10
     },
     "tray": {

@@ -52,7 +52,7 @@ window#waybar.hidden {
 #workspaces button.urgent {
   background-color: #f38ba8;
 }
-
+#temperature,
 #cpu,
 #memory,
 #custom-power,
@@ -92,6 +92,33 @@ window#waybar.hidden {
     border-radius: 12px;
 }
 
+#temperature {
+    background-color: #7fd67e;
+    border-radius: 12px;
+}
+
+#temperature.critical {
+    background-color: #e75557;
+    border-radius: 12px;
+}
+
+#disk {
+    background-color: #7dbfee;
+    border-radius: 12px;
+    padding: 6px 12px;
+    margin: 6px 3px;
+    color: #1e1e2e;
+}
+
+#disk.warning {
+    background-color: #7dbfee;
+}
+
+#disk.critical {
+    background-color: #7dbfee; 
+}
+
+
 #memory {
   background-color: #7dbfee;
   border-radius: 12px;
@@ -124,7 +151,7 @@ window#waybar.hidden {
 }
 
 #network {
-  background-color: #94e2d5;
+  background-color: #75d4c4;
   padding-right: 15px;
   border-radius: 12px;
 }
@@ -136,7 +163,7 @@ window#waybar.hidden {
 }
 
 #custom-power {
-  background-color: #f2cdcd;
+  background-color: #df6464;
   border-radius: 12px;
 }
 
@@ -145,9 +172,11 @@ tooltip {
   border-radius: 8px;
   padding: 15px;
   background-color: #131822;
+  border-color: #7dbfee;
 }
 
 tooltip label {
   padding: 5px;
   background-color: #131822;
+  border-color: #7dbfee;
 }
