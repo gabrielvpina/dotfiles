@@ -3,7 +3,7 @@ TERM = "xterm-256color"
 
 [window.padding]
 x = 10
-y = 0
+y = 5
 
 [window.dimensions]
 columns = 140
@@ -37,5 +37,5 @@ style = "Regular"
 
 [general]
 import = [
-  "~/.config/alacritty/catppuccin-mocha.toml"
+  "~/.config/alacritty/tokyo-night.toml"
 ]
