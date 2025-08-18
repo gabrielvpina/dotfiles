@@ -1,0 +1,4 @@
+### GTK theme for Thunar
+
+Dracula GTK theme 
+papirus indigo folders

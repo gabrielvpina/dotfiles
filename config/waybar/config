@@ -11,10 +11,10 @@
         "clock"
     ],
     "modules-right": [
-        "temperature",
+        "tray",
+	"temperature",
         "cpu",
         "disk",
-        "tray",
         "memory",
         "network",
         "wireplumber",
@@ -58,7 +58,7 @@
 
     "temperature": {
         "thermal-zone": 2,
-        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon2/",
         "critical-threshold": 80,
         "format-critical": " CPU  {temperatureC}°C",
         "format": "CPU  {temperatureC}°C"
