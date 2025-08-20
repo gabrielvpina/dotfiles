@@ -53,6 +53,7 @@ window#waybar.hidden {
   background-color: #f38ba8;
 }
 #temperature,
+#mpris,
 #cpu,
 #memory,
 #custom-power,
@@ -80,6 +81,21 @@ window#waybar.hidden {
   font-size: 15px;
   border-radius: 8px 0px 0px 8px;
   color: #1793d1;
+}
+
+/* player in waybar */
+#mpris {
+    background-color: #eb945f;
+    border-radius: 12px;
+    font-size: 10px;  
+}
+
+#mpris.paused {
+  background-color: #f9e2af;
+}
+
+#mpris.spotify {
+  background-color: #1ed760; /* Verde do Spotify */
 }
 
 #cpu {

@@ -5,7 +5,8 @@
     "height": 34,
     "modules-left": [
         "custom/logo",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "mpris"
     ],
     "modules-center": [
         "clock"
@@ -50,6 +51,23 @@
             "5": []
         }
     },
+
+    "mpris": {
+        "format": "<span>{player_icon}  {title}</span>",
+        "format-paused": "<span>{status_icon}  {title}</span>",
+        "player-icons": {
+            "firefox": "󰈹",
+            "spotify": "",
+            "default": ""
+        },
+        "status-icons": {
+            "playing": "",
+            "paused": "",
+            "stopped": ""
+        },
+        "ignored-players": []
+    },
+
     "cpu": {
         "format": ":{usage}%",
         "interval": 2,
