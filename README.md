@@ -29,4 +29,5 @@ And now we launch our settings in gnome extensions.
 
 ## Hyprland
 The `.config` directories of both laptop and desktop hyprland, hyprpaper, waybar, alacritty and rofi.
+<img src="https://github.com/gabrielvpina/dotfiles/blob/main/pictures/hyprland_print.png?raw=true" width="850" height="550">
 
