@@ -26,3 +26,7 @@ Use the created file to launch our settings:
 dconf load /org/gnome/shell/extensions/ << gnomeExt.conf
 ```
 And now we launch our settings in gnome extensions.
+
+## Hyprland
+The `.config` directories of both laptop and desktop hyprland, hyprpaper, waybar, alacritty and rofi.
+
