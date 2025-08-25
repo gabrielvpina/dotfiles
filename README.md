@@ -1,32 +1,8 @@
 ## Starship
-Install Starship to get a custom terminal theme.
 ### Installation
 ```
 sudo pacman -S starship
 ```
-### Setup
-Use the file `starship.toml` and use as config file to get the correct color scheme (catppuccin!😃).
-
-
-## Gnome extensions
-Use the profile to download and save the custom GNOME enviroment.
-### install gnome extensions
-`sudo pacman -S gnome-extensions`
-### installing tldr
-First install tldr with `sudo pacman -S tldr` command.
-After that we can create our profile of extensions and config (file gnomeExt.conf):
-```
-dconf dump /org/gnome/shell/extensions/ >> gnomeExt.conf
-```
-The file `gnomeExt.conf` has our gnome extensions packages and configs.
-
-### launch our settings
-Use the created file to launch our settings:
-```
-dconf load /org/gnome/shell/extensions/ << gnomeExt.conf
-```
-And now we launch our settings in gnome extensions.
-
 ## Hyprland
 The `.config` directories of both laptop and desktop, these config files are for:
 - hyprland
@@ -36,3 +12,10 @@ The `.config` directories of both laptop and desktop, these config files are for
 - rofi
 <img src="https://github.com/gabrielvpina/dotfiles/blob/main/pictures/hyprland_print.png?raw=true" width="850" height="550">
 
+## Apps of hyprland
+- Thunar (file explorer)
+- Geany (notes)
+
+### GTK Themes
+Dracula GTK theme 
+Papirus indigo folders
