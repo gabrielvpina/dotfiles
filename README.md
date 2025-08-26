@@ -4,6 +4,10 @@
 sudo pacman -S starship
 ```
 ## Hyprland
+### Installation
+```
+sudo pacman -S hyprland hyprpaper waybar alacritty rofi
+```
 The `.config` directories of both laptop and desktop, these config files are for:
 - hyprland
 - hyprpaper
