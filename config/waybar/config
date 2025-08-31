@@ -77,8 +77,8 @@
 
 
     "mpris": {
-        "format": "<span>{player_icon}  {title} - {artist}</span>",
-        "format-paused": "<span>{status_icon}  {title} - {artist}</span>",
+        "format": "<span>{player_icon}</span>",
+        "format-paused": "<span>{status_icon}</span>",
         "player-icons": {
             "firefox": "󰈹",
             "spotify": "",
