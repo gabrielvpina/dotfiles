@@ -9,11 +9,13 @@
         "mpris"
     ],
     "modules-center": [
-        "clock"
+        "clock",
+        "custom/notification"
+	    
     ],
     "modules-right": [
         "tray",
-	"temperature",
+	    "temperature",
         "cpu",
         "disk",
         "memory",
@@ -52,9 +54,31 @@
         }
     },
 
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+        "notification": "",
+        "none": "",
+        "dnd-notification": "",
+        "dnd-none": "",
+        "inhibited-notification": "",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "",
+        "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+
     "mpris": {
-        "format": "<span>{player_icon}  {title}</span>",
-        "format-paused": "<span>{status_icon}  {title}</span>",
+        "format": "<span>{player_icon}  {title} - {artist}</span>",
+        "format-paused": "<span>{status_icon}  {title} - {artist}</span>",
         "player-icons": {
             "firefox": "󰈹",
             "spotify": "",
