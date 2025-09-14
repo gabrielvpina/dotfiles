@@ -12,6 +12,9 @@ openconnect
 rofi
 waybar
 vlc
+xdg-desktop-portal-hyprland 
+grim 
+slurp
 visual-studio-code-bin
 ttf-jetbrains-mono-nerd
 ttf-iosevka
