@@ -21,7 +21,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Iosevka Nerd Font 10";
+    font:                        "JetBrainsMono Nerd Font 10";
 }
 
 /*****----- Main Window -----*****/
@@ -41,7 +41,7 @@ window {
     padding:                     0px;
     border-radius:               10px;
     cursor:                      "default";
-    background-color:            white;
+    background-color:            #282135ff;
 }
 
 /*****----- Main Box -----*****/
@@ -70,7 +70,7 @@ textbox-prompt-colon {
     border-radius:               10px;
     border-color:                gray/30%;
     background-color:            gray/15%;
-    text-color:                  black;
+    text-color:                  white;
     str:                         "";
 }
 entry {
@@ -80,7 +80,7 @@ entry {
     border-radius:               10px;
     border-color:                gray/30%;
     background-color:            gray/15%;
-    text-color:                  black;
+    text-color:                  white;
     cursor:                      text;
     placeholder:                 "Search...";
     placeholder-color:           inherit;
@@ -115,21 +115,21 @@ element {
     border:                      0px solid;
     border-radius:               10px;
     background-color:            transparent;
-    text-color:                  black;
+    text-color:                  white;
     cursor:                      pointer;
 }
 element normal.active {
     background-image:            linear-gradient(to right, #19B466, #7BF4B7);
-    text-color:                  black;
+    text-color:                  white;
 }
 element selected.normal {
     border-radius:               10px;
-    background-image:            linear-gradient(to right, #FF9030, #FFC99B);
-    text-color:                  black;
+    background-image:            linear-gradient(to right, #024b68ff, #3d023fff);
+    text-color:                  white;
 }
 element selected.active {
     background-image:            linear-gradient(to right, #EA5553, #EAACAB);
-    text-color:                  black;
+    text-color:                  white;
 }
 element-icon {
     background-color:            transparent;
@@ -161,19 +161,19 @@ button {
 }
 button selected {
     background-image:            linear-gradient(to right, #44A2F0, #BDDDF8);
-    text-color:                  black;
+    text-color:                  white;
 }
 
 /*****----- Message -----*****/
 error-message {
     padding:                     20px;
     background-color:            white;
-    text-color:                  black;
+    text-color:                  white;
 }
 textbox {
     padding:                     0px;
     border-radius:               0px;
-    text-color:                  black;
+    text-color:                  white;
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }

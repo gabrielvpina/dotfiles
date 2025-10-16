@@ -12,6 +12,8 @@ openconnect
 rofi
 waybar
 vlc
+lollypop
+id3v2
 xdg-desktop-portal-hyprland 
 grim 
 slurp
