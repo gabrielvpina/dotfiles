@@ -2,14 +2,13 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: JetBrainsMono Nerd Font;
+  font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
 }
 
-/* Modificação: Fundo da barra superior transparente */
 window#waybar {
-  background-color: rgba(36, 1, 39, 0); /* Totalmente transparente */
+  background-color: rgba(36, 1, 39, 0); 
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -18,49 +17,41 @@ window#waybar.hidden {
   opacity: 0.5;
 }
 
-/* Os Workspaces já estavam transparentes, mantido */
 #workspaces {
   background-color: transparent;
 }
 
 #workspaces button {
   all: initial;
-  /* Remove GTK theme values (waybar #1351) */
   min-width: 0;
-  /* Fix weird spacing in materia (waybar #450) */
   box-shadow: inset 0 -3px transparent;
-  /* Use box-shadow instead of border so the text isn't offset */
   padding: 6px 18px;
   margin: 6px 5px;
   border-radius: 12px;
-  /* Modificação: Fundo cinza escuro, letras brancas (Workspaces inativas) */
-  background-color: #240947; /* Cinza escuro (Nord) */
-  color: #eceff4; /* Branco claro */
+  background-color: #240947;
+  color: #f4ecec; 
+  /* border: 1px solid #000000; */
 }
 
 
 #workspaces button.active {
-  /* Mantido o esquema original para o workspace ativo para dar contraste, mas ajustado para as novas cores */
-  color: #240947; /* Letras cinza escuro */
-  background-color: #eceff4; /* Fundo branco claro */
+  color: #240947; 
+  background-color: #eceff4; 
   border-radius: 12px;
 }
 
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  /* Mantido o esquema do active para o hover */
   color: #240947;
   background-color: #eceff4;
 }
 
 #workspaces button.urgent {
-  /* Mantido o vermelho para urgente */
   background-color: #f38ba8;
-  color: #240947; /* Ajustado cor da letra */
+  color: #240947;
 }
 
-/* Modificação: Fundo cinza escuro, letras brancas para a maioria dos módulos */
 #temperature,
 #mpris,
 #cpu,
@@ -73,12 +64,13 @@ window#waybar.hidden {
 #network,
 #clock,
 #tray,
-#disk { /* Adicionei #disk para aplicar o estilo geral de widget */
-  border-radius: 12px; /* Ajustei para o padrão de 12px dos outros widgets */
+#disk { 
+  border-radius: 12px; 
   margin: 6px 3px;
   padding: 6px 12px;
-  background-color: #240947; /* Cinza escuro */
-  color: #eceff4; /* Branco claro */
+  background-color: #240947;
+  color: #eceff4; 
+  /* border: 1px solid #000000; */
 }
 
 #custom-power {
@@ -91,12 +83,11 @@ window#waybar.hidden {
   margin-left: 5px;
   font-size: 15px;
   border-radius: 8px 0px 0px 8px;
-  color: #ffffff; /* Mantido a cor original para destaque */
+  color: #ffffff; 
 }
 
-/* player in waybar - Ajustado para usar as cores cinza/branco, mas mantendo a estrutura */
 #mpris {
-    background-color: #3b4252; /* Um cinza um pouco diferente para destaque */
+    background-color: #240947; 
     border-radius: 12px;
     font-size: 16px;  
     padding-left: 8px;
@@ -104,39 +95,31 @@ window#waybar.hidden {
 }
 
 #mpris.paused {
-  background-color: #4c566a; /* Cinza para paused */
+  background-color: #4c566a; 
 }
 
 #mpris.spotify {
-  background-color: #1ed760; /* Mantido o verde do Spotify */
-  color: #240947; /* Letra escura no verde */
+  background-color: #1ed760; 
+  color: #240947; 
 }
 
 
-/* Estilo geral para o módulo de notificação - Ajustado cores */
 #custom-notification {
-  color: #eceff4; /* Branco claro */
+  color: #eceff4; 
   font-size: 16px;
   padding-left: 9px;
   border-radius: 15px;
-  background-color: #240947; /* Cinza escuro */
+  background-color: #240947; 
 }
 
-/* Estilo para quando há notificações (o swaync-client adiciona esta classe) */
 #custom-notification.notification {
-  color: #ff5555; /* Exemplo: vermelho para notificação */
+  color: #ff5555; 
 }
 
-/* Estilo para quando está no modo DND (Não Perturbe) */
 #custom-notification.dnd-notification {
-  color: #888888; /* Exemplo: cinza para DND */
+  color: #888888; 
 }
 
-/*
-    Módulos que precisam de cores de status (como temperatura, bateria)
-    foram ajustados para usar o cinza escuro como base, mas mantendo
-    as cores de alerta para 'critical', 'warning', 'charging', etc.
-*/
 
 #cpu {
     background-color: #240947;
@@ -151,7 +134,7 @@ window#waybar.hidden {
 }
 
 #temperature.critical {
-    background-color: #e75557; /* Vermelho para crítico */
+    background-color: #e75557;
     border-radius: 12px;
     color: #eceff4;
 }
@@ -165,12 +148,12 @@ window#waybar.hidden {
 }
 
 #disk.warning {
-    background-color: #240947; /* Amarelo/Laranja para warning */
+    background-color: #240947; 
     color: #eceff4;
 }
 
 #disk.critical {
-    background-color: #bf616a; /* Vermelho para crítico */ 
+    background-color: #bf616a; 
     color: #eceff4;
 }
 
@@ -189,12 +172,12 @@ window#waybar.hidden {
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-  background-color: #ff0000; /* Vermelho para alerta */
+  background-color: #ff0000; 
   color: #eceff4;
 }
 
 #battery.charging {
-  background-color: #a3be8c; /* Verde para carregando */
+  background-color: #a3be8c; 
   color: #240947;
 }
 
@@ -234,7 +217,7 @@ window#waybar.hidden {
 tooltip {
   border-radius: 8px;
   padding: 15px;
-  background-color: #240947; /* Cinza escuro para tooltip */
+  background-color: #240947; 
   border-color: #88c0d0;
 }
 
@@ -242,5 +225,5 @@ tooltip label {
   padding: 5px;
   background-color: #240947;
   border-color: #88c0d0;
-  color: #eceff4; /* Letras brancas para tooltip */
+  color: #eceff4;
 }
