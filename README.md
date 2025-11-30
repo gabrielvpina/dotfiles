@@ -14,7 +14,7 @@ The `.config` directories of both laptop and desktop, these config files are for
 - waybar
 - alacritty
 - rofi
-<img src="https://github.com/gabrielvpina/dotfiles/blob/main/images/hyprland_print.png?raw=true" width="850" height="550">
+<img src="https://github.com/gabrielvpina/dotfiles/blob/main/images/print_hypr.png?raw=true" width="850" height="550">
 
 ## Apps of hyprland
 - Thunar (file explorer)
