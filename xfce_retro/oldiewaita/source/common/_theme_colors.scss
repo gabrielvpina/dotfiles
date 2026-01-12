@@ -1,0 +1,42 @@
+$window_fg: #1d1d1d;
+$window_bg: #bbbbbb;
+$text_widget_fg: #1d1d1d;
+$text_widget_bg: #CCCCCC;
+
+$selected_fg: #000000;
+$selected_bg: #D8761A;
+
+$button_fg: #1d1d1d;
+$button_bg: #dddddd;
+$button_checked_bg: #D8761A;
+$button_checked_fg: #000000;
+
+
+$disabled_fg: #807a6a;
+$disabled_bg: #c3bbaf;
+
+/*Usually an automatic fg color on these backgrounds should check this value!*/
+$warningc: #E1BF00;
+$errorc: #df0000;
+$successc: #6FD213;
+
+
+$titlebar_active_fg: #1d1d1d;
+$titlebar_active_bg: #AF8F71;
+
+$titlebar_backdrop_fg: #1d1d1d;
+$titlebar_backdrop_bg: #bbbbbb;
+
+$hint_fg: #273313;
+$hint_bg: #C3DDAE;
+
+$osd_fg: #273313;
+$osd_bg: #C3DDAE;
+
+$link_fg: #004B91;
+$link_visited_fg: #680091;
+
+// ---- These are not colors, but other types of variables:
+
+$button_radius: 0px;
+$window_radius: 0px;

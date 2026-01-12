@@ -1,0 +1,69 @@
+.nautilus-path-bar .path-buttons-box {
+	//border-width: $border_width;
+	//border-style: solid;  
+  //@include relief($button_bg);
+  //color: $button_fg;
+  //padding: 0;
+  button { 
+    @extend %button_basic;
+    @extend %button_basic_flat;
+    
+    }
+}
+
+#NautilusPathBar {
+    background: none;
+    border-radius: 0px;
+    button, menubutton, #NautilusPathButton { //why a repeated id?? shouldn't that be a class, programmer that programs Nautilus? I've never programmed a GTK app, though!
+        margin: 0;
+        label {font-weight: normal; font-style: italic;} //this italic is a subtle reference to the removed slashes
+    }
+    > scrolledwindow > viewport > box > box > label { // makes the slashes disappear
+	opacity: 0;
+	margin: 0 -0.5em;
+	padding: 0;
+    }
+    
+    button.current-dir, #NautilusPathButton.current-dir {
+        @include button(checked-active);
+        &:hover {
+            @include button(checked-hover);
+        }
+        label {
+            font-weight: bold;
+            font-style: normal;
+        }
+    }
+}
+
+.nautilus-list-view listview > row {
+border-radius: 0px;
+margin: 0pX
+}
+
+#NautilusViewCell {
+    border-radius: 0px;
+    & box { margin: 0px;}
+}
+
+// Nautilus improvements
+.nautilus-window {
+    
+    .collapse-spacing {
+        padding: 0;
+    }
+  
+  headerbar {
+    min-height: 2.7em;
+    }
+  .nautilus-list-view {
+    columnview, listview, cell {
+            margin: 0;
+    }
+    cell {padding: 0;}
+    
+    row {margin: 0;}
+    
+  }
+}
+

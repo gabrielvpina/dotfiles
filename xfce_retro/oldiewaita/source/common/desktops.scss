@@ -1,0 +1,88 @@
+// Other desktops fixes
+
+// XFCE
+
+
+XfdesktopIconView.view {
+    text-shadow: 0 0 2px $base_color, 0 0 2px $base_color, 0 0 2px $base_color;
+    color: $text_color;
+    background-color: transparent;
+    
+    .rubberband {
+        background-color: gtkalpha($selected_bg_color, 0.5);
+    }
+}
+
+XfdesktopIconView.view:active {
+    text-shadow: none;
+    color: $selected_fg_color;
+    background-color: gtkalpha($selected_bg_color, 0.5);
+}
+
+#XfceNotifyWindow {
+    
+      color: $hint_fg;
+      border-radius: $window_radius;
+      border-width: $border_width;
+      border-style: solid;
+      @include relief($hint_bg);
+      label {color: $hint_fg}
+      label #summary { font-weight: bold; }
+      
+      button { 
+        @include button(osd);
+        &:hover {@include button(osd-hover); }
+        &:active {@include button(osd-active);}
+      }
+
+  }
+  
+// To avoid a frame around the desktop in Cinnamon desktop
+.nemo-desktop-window notebook {
+	border: none;
+}
+.nemo-desktop-window stack {
+	background: none;
+	border: none;
+}
+
+// Mate:
+
+// In case contrast of selected bakcground and background is low... mate-control-center needs this:
+
+#slab_section_style1 > box > label {
+    color: mix($selected_bg_color, $text_color, 50%);
+}
+
+.caja-navigation-window widget.view {
+    caret-color: #7f7f7f; //for some reason, when renaming a file in icon view mode, background is white and text is black, so caret needs to be set
+}
+
+
+#mate-menu { 
+    border-width: $border_width;
+    border-style: solid;
+    @include relief($bg_color);
+    } //not working...
+
+
+// general libadwaita
+.top-bar {
+    background-color: $titlebar_active_bg;
+    color: $titlebar_active_fg;
+    
+    &:backdrop {
+        background-color: $titlebar_backdrop_bg;
+        color: $titlebar_backdrop_fg;
+        transition: none;//$backdrop_transition;
+    }
+}
+
+.character-list-scroll{ //On gnome-characters I've noticed that on light themes, something weird happens, let's hope this (seemingly unnecessary) fixes it!
+    color: $text_color;
+    background-color: $base_color;
+}
+
+windowhandle > box {
+padding: 0;
+}
